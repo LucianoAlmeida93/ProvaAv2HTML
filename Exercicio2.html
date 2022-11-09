@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora em Segundos</title>
+</head>
+<body>
+    <div id="rsp"> </div>
+    <script>
+        let Hora = prompt("Digite a hora.");
+        let Minutos = prompt("Digite os minutos.");
+        let Segundos = Number(prompt("Digite os segundos"));
+       
+      
+
+        let totalhoras = Number(Hora)*3600;
+        let totalminutos = Number(Minutos)*60;
+
+        
+        
+        document.getElementById("rsp").innerHTML = ("Hora em segundos: " + (totalhoras + totalminutos + Segundos))
+
+
+    </script>
+</body>
+</html>

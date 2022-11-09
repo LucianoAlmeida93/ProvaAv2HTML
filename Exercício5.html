@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lanchonete Estácio</title>
+    </head>
+    <body>
+        <h1>Lanchonete Estácio</h1>
+        <div id="rsp"> </div>
+        <script>
+    
+
+                let nome = prompt("Digite seu nome:");
+                
+                let quantHotDog = parseFloat(prompt("Digite a quantidade de Hot dogs (R$1,00):"));
+                let valorHotDog = parseFloat(1.00);
+
+                let quantHamburger = parseFloat(prompt("Digite a quantidade de Hamburger (R$1,30):"));
+                let valorHamburger = parseFloat(1.30);
+
+                let quantCheeseburger = parseFloat(prompt("Digite a quantidade de Cheeseburger (R$1,50):"));
+                let valorCheeseburger = parseFloat(1.50);
+
+                let quantBatata = parseFloat(prompt("Digite a quantidade de Batatas Frita (R$0,80):"));
+                let valorBatata = parseFloat(0.80);
+
+                let quantRefrigerante = parseFloat(prompt("Digite a quantidade de latas de Refrigerante (R$1,00):"));
+                let valorRefrigerante = parseFloat(1.00);
+
+                
+
+                let valorTotal = (quantHotDog * valorHotDog) + (quantHamburger * valorHamburger) + (quantCheeseburger * valorCheeseburger) + (quantBatata * valorBatata) + (quantRefrigerante * valorRefrigerante);
+
+
+
+                document.getElementById("rsp").innerHTML =("Olá " + nome + "<br> O valor total do seu pedido é de: R$" + valorTotal.toFixed(2));
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fábrica Estácio</title>
+    </head>
+    <body>
+        <h1>Fábrica Estácio</h1>
+        <div id="rsp"> </div>
+        <script>
+        
+
+                let nomeproduto = prompt("Digite o nome do produto:");
+                let custoFabrica = parseFloat(prompt("Digite o custo de fábricação do produto:"));
+                let quantImposto = parseFloat(prompt("Digite a porcentagem (%) de impostos sobre o produto:"));
+                let quantDist = parseFloat(prompt("Digite a porcentagem (%) do distribuidor sobre o produto:"));
+
+                let valorFinal = custoFabrica + ((custoFabrica * quantImposto) / 100) + ((custoFabrica * quantDist) / 100);
+
+                document.getElementById("rsp").innerHTML = ("O produto " + nomeproduto + " possui o preço final de R$" + valorFinal.toFixed(2));
+    
+        </script>
+    </body>
+</html>

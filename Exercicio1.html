@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <div id="rsp"> </div>
+    <script>
+        let Aluno = prompt("Digite o seu nome.");
+        let Disciplina = prompt("Digite o nome da disciplina.");
+        let Numero_da_turma = Number(prompt("Digite o número da turma"));
+        let n1 = Number(prompt("Digite a primeira nota"));
+        let n2 = Number(prompt("Digite a segunda nota"));
+        let n3 = Number(prompt("Digite a terceira nota"));
+      
+
+        let total = (Number(n1) + Number(n2) + Number(n3))/3;
+
+        
+        
+        document.getElementById("rsp").innerHTML = ("Aluno: " + Aluno + "<br>Nota AV1: " + n1 + "<br>Nota AV2: " + n2 + "<br>Nota AV3: " + n3 + "<br>Disciplina: " + Disciplina + "<br>Sua turma: " + Numero_da_turma + "<br>A sua média é: " + total)
+
+
+    </script>
+</body>
+</html>

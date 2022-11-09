@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câmbio de Dólar</title>
+</head>
+<body>
+    <div id="rsp"> </div>
+    <script>
+        let Valordolar = prompt("Digite a cotação do dólar do dia:");
+        let trocadolar = prompt("Quantos dólares você deseja trocar?");
+        
+       
+      
+
+        let totalcambio = Number(Valordolar * trocadolar);
+        
+
+        
+        
+        document.getElementById("rsp").innerHTML = ("O valor total de dólares em reais é de: R$ " + totalcambio)
+
+
+    </script>
+</body>
+</html>
